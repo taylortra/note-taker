@@ -1,40 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Note Taking Website</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/stylesheet.css">
-</head>
-<body>
-  <header>
-    <h1 class="main-header">Take Better Notes</h1>
-    <div class="content">
-      <h2>New Note</h2>
-      <form>
-        <textarea placeholder="Enter your note here"></textarea>
-        <div class="buttons">
-          <button type="submit">Save</button>
-          <button type="button">Cancel</button>
-        </div>
-        <div class="sidebar">
-          <h1>My Notes</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    >
+    <title>Assignment 1</title>
+  </head>
+  <body class="light">
+    <aside class="light">
+      <h2>My Notes</h2>
+      <ul class="NoteList">
+        <li>note one</li>
+        <li>note two</li>
+      </ul>
+    </aside>
+    <div>
+      <header>
+        <h1>Take Better Notes</h1>
+        <nav>
           <ul>
-            <li><a href="#">Note 1</a></li>
-            <li><a href="#">Note 2</a></li>
-            <li><a href="#">Note 3</a></li>
+            <li>
+              <a href="" title="About" target="_self" class="light">About</a>
+            </li>
+            <li>
+              <a href="" title="Docs" target="_self" class="light">Docs</a>
+            </li>
           </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="Text_box">
+          <div>
+            <button id="NewNote" class="light">New Note</button>
+            <button id="Dark" class="light">Dark Theme</button>
+          </div>
+          <textarea
+            spellcheck="true"
+            wrap="soft"
+            placeholder="This is a placeholder"
+            class="light"
+          ></textarea>
+          <div class="BottomFlexbox">
+            <button id="Save" class="light">Save</button>
+            <button id="Cancel" class="light">Cancel</button>
+          </div>
         </div>
-      </form>
+      </main>
+      <footer>
+        <h2>Keep in Touch</h2>
+        <nav class="KIT">
+          <ul>
+            <li>
+              <button class="light">
+                <img
+                  src="logos/linkedin_circle_color-512.webp"
+                  height="50"
+                  alt="LinkedIn"
+                >
+              </button>
+            </li>
+            <li>
+              <button class="light">
+                <img src="logos/2034249.png" height="50" alt="Internet Icon">
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
-  </main>
-  <footer>
-    <p>&copy; keep in touch</p>
-    <div class="logos">
-        <a href="#"><img src="logos/linkedin_circle_color-512.webp" alt="LinkedIn logo"></a>
-        <a href="#"><img src="logos/2034249.png" alt="Internet logo"></a>
-      </div>
-  </footer>
-</body>
+  </body>
 </html>
