@@ -36,14 +36,14 @@
 
 body {
   font: 'Bebas Neue';
-  background-color: #f9f3ec;
-  color: #3c5f6f;
+  background-color: #FAF4EC;
+  color: black;
 }
 
 nav a{
   text-decoration: none;
   color: inherit;
-  color: #3c5f6f;
+  color: #375F68;
 }
 
 h1,
@@ -69,6 +69,7 @@ footer nav ul li {
 }
 
 button,textarea{
+  cursor:pointer;
   border: none;
   border-radius: 20px;
   margin: 5px;
@@ -86,12 +87,12 @@ button,textarea{
   color: #3c5f6f;
 }
 
-
 aside{
-  background-color: #f0f8ff;
+ background-color: #A1C5CE;
 }
+
 .image{
-  background-color:#f9f3ec; 
+  background-color:#FAF4EC; 
 }
 
 #Dark{
