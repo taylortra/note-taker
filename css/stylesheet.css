@@ -1,151 +1,119 @@
-body{
-  font-family: 'Montserrat', sans-serif;
+@media screen and (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 0;
+    column-gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  aside {
+    height: 100vh;
+  }
+
+  aside ul {
+    text-align: left;
+    list-style-type: square;
+  }
+
+  div.Text_box div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.Text_box div.BottomFlexbox {
+    justify-content: flex-end;
+  }
+
+  section ul {
+    display: flex;
+  }
 }
-body.light{
+
+body {
+  font-family: 'helvetica', 'san serif';
   background-color: #f9f3ec;
-  color: #3c5f6f;  
+  color: #3c5f6f;
 }
-body.dark{
-  color: #f9f3ec;
-  background-color: #161616;  
+
+nav a{
+  text-decoration: none;
+  color: inherit;
+  color: #3c5f6f;
 }
-h1,h2{
-  text-align: center
-}   
-nav ul {
-  display:flex;
+
+h1,
+h2 {
+  text-align: center;
+}
+
+nav ul,
+footer nav ul {
+  display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   justify-content: center;
   align-items: center;
 }
-nav ul li {
-  padding:5px;
+
+nav ul li,
+footer nav ul li {
+  padding: 5px;
 }
-nav a{
-  text-decoration: none;
-}
-nav a.dark{
-  color:#ffffff
-}
-nav a.dark:visited{
-  color:#aaaaaa
-}
-button{
+
+button,
+textarea,
+aside ul li {
+  cursor: pointer;
   border: none;
+  border-radius: 10px;
+  margin: 5px;
   padding: 10px;
   text-decoration: none;
-  border-radius: 10px;
-  color:white;
-  margin: 5px;
 }
-button.light{
-  background-color: #477C86;
+
+.buttons{
+  background-color: #729aff;
+  color: #fff;
 }
-button.dark{
-  background-color: #647088eb;
-}
-button.dark:hover{
-  background-color: #6380baeb;
-}
-button:hover{
-  background-color: darkcyan;
-}
-button:active{
-  transform: translateY(2px);
+.aboutdoc{
+  color: #3c5f6f;
 }
 textarea{
-  resize: none;
-  width: 100%;
-  height: 100px;
-  border:0px;
+  background-color: #fff;
+  color: #000;
 }
-textarea.light{
-  background-color: white;
-  color: black;
+
+aside{
+  background-color: #f0f8ff;
 }
-textarea.dark{
-  background-color: #ffffff1a;
-  color: #f9f3ec;
+.image{
+  background-color:#f9f3ec; 
 }
-#Dark.dark{
-  background-color: #f9f3ec;
-  color: #454253dc;
-}
-#Dark.dark:hover{
-  background-color: #FFFFFF;
-}
-#Dark.light {
+
+#Dark{
   background-color: #6f6a87;
   color: #f9f3ec;
 }
-#Dark.light:hover{
-  background-color: #454253dc;
-}
-#Cancel.light{
+
+#Cancel{
   background-color: #c14d4d;
 }
-#Cancel.dark{
-  background-color: #632424;
-}
-#Cancel.dark:hover{
-  background-color: #94242a;
-}
-#Cancel.light:hover{
-  background-color: #d9343c;
-}
-div.Text_box div{
-  display:flex;    
-}
-div.Text_box div {
-  justify-content:space-between
-}
-div.Text_box div.BottomFlexbox{
-  justify-content: flex-end;
-}
-section ul{
-  display:flex;
-}
-aside.light{
-  background-color: #f0f8ff;
-}
-aside.dark{
-  background-color: #ffffff1a;
-}
-aside ul {
-  list-style-type: square;
-  text-align: center;
-}
-aside ul li {
-  cursor: pointer;
-}
-footer nav ul{
-  flex-direction: row;
-  justify-content: center;
-}
-footer ul li button.light,footer ul li button.light:hover{
+
+footer ul li button.light,
+footer ul li button.light:hover {
   background-color: #f9f3ec;
+  color: #3c5f6f;
 }
-footer ul li button.dark, footer ul li button.dark:hover{
+
+footer ul li button,
+footer ul li button {
   background-color: #161616;
-}
-@media screen and (min-width: 768px){
-  body{
-      display:grid;
-      grid-template-columns: 1fr 4fr;
-      margin:0px;
-      column-gap: 10px;
-  }
-  nav ul {
-      flex-direction: row;
-      justify-content: right;
-  } 
-  aside{
-      height:100vh;
-  }
-  aside ul {
-      text-align: left;
-  }
+  color: #f9f3ec;
 }
