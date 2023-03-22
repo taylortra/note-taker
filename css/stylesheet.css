@@ -35,7 +35,7 @@
 }
 
 body {
-  font-family: 'helvetica', 'san serif';
+  font: 'Bebas Neue';
   background-color: #f9f3ec;
   color: #3c5f6f;
 }
@@ -49,6 +49,7 @@ nav a{
 h1,
 h2 {
   text-align: center;
+  font-size: xx-large;
 }
 
 nav ul,
@@ -67,15 +68,14 @@ footer nav ul li {
   padding: 5px;
 }
 
-button,
-textarea,
-aside ul li {
-  cursor: pointer;
+button,textarea{
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 5px;
   padding: 10px;
   text-decoration: none;
+  background-color: #fff;
+  color:#000
 }
 
 .buttons{
@@ -85,10 +85,7 @@ aside ul li {
 .aboutdoc{
   color: #3c5f6f;
 }
-textarea{
-  background-color: #fff;
-  color: #000;
-}
+
 
 aside{
   background-color: #f0f8ff;
@@ -105,13 +102,6 @@ aside{
 #Cancel{
   background-color: #c14d4d;
 }
-
-footer ul li button.light,
-footer ul li button.light:hover {
-  background-color: #f9f3ec;
-  color: #3c5f6f;
-}
-
 footer ul li button,
 footer ul li button {
   background-color: #161616;
