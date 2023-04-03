@@ -28,7 +28,7 @@ class Note {
     NoteArray.push(New_Note);
     NoteList_HTML.appendChild(ListElement);
   };
-
+  
   FindNote = event => {
     show_elements();
     for (note of NoteArray) {
