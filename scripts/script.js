@@ -4,14 +4,11 @@ class Note {
       this.body = body;
     }
   }
-  
-
+ 
   let Note1 = new Note("note one", "This is my first note");
   let Note2 = new Note("note two", "This is my second note");
-  let Note3 = new Note("note three", "This is my third note");
-  let NoteArray = [Note1, Note2,Note3];
-  
- 
+  let NoteArray = [Note1, Note2];
+
   const NoteList_HTML = document.querySelector(".NoteList");
   const NoteArea = [
     document.getElementById("Cancel"),
@@ -24,7 +21,6 @@ class Note {
     Color_List.push(element);
   };
   
-
   Add_to_List = (Title, Body) => {
     New_Note = new Note(Title, Body);
     ListElement = document.createElement("li");
@@ -32,7 +28,6 @@ class Note {
     NoteArray.push(New_Note);
     NoteList_HTML.appendChild(ListElement);
   };
-  
 
   FindNote = event => {
     show_elements();
@@ -42,8 +37,7 @@ class Note {
       }
     }
   };
-  
-  
+
   show_elements = () => {
     if (!document.querySelector("textarea").hasAttribute("hidden")) {
       clear_text();
@@ -55,7 +49,6 @@ class Note {
     }
   };
   
-
   dark_light_mode = event => {
     for (element of Color_List) {
       element.classList.toggle("light");
@@ -67,7 +60,7 @@ class Note {
       event.target.innerText = "Dark Theme";
     }
   };
-
+  
   hide_elements = () => {
     for (element of NoteArea) {
       if (!element.hasAttribute("hidden")) {
@@ -77,27 +70,22 @@ class Note {
   };
   
   clear_text = () => (document.querySelector("textarea").value = "");
-
+  
   save = () => {
     var title = prompt("Please enter a title for this note.");
     var body = document.querySelector("textarea").value;
     Add_to_List(title, body);
     clear_text();
   };
-  
-
+ 
   NoteList_HTML.addEventListener("click",FindNote);
-  
 
   document.getElementById("Save").addEventListener("click", save);
-  
-
-  document.getElementById("Dark").addEventListener("click", dark_light_mode);
  
+  document.getElementById("Dark").addEventListener("click", dark_light_mode);
+  
   document.getElementById("NewNote").addEventListener("click", show_elements);
   
-
   document.getElementById("Cancel").addEventListener("click", hide_elements);
   
-
   clear_text();
