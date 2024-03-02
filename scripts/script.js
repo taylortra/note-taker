@@ -28,15 +28,7 @@ class Note {
     NoteArray.push(New_Note);
     NoteList_HTML.appendChild(ListElement);
   };
-  
-  FindNote = event => {
-    show_elements();
-    for (note of NoteArray) {
-      if (note.title == event.target.innerText) {
-        document.querySelector("textarea").value = note.body;
-      }
-    }
-  };
+
 
   show_elements = () => {
     if (!document.querySelector("textarea").hasAttribute("hidden")) {
@@ -45,6 +37,15 @@ class Note {
     for (element of NoteArea) {
       if (element.hasAttribute("hidden")) {
         element.toggleAttribute("hidden");
+      }
+    }
+  };
+
+  FindNote = event => {
+    show_elements();
+    for (note of NoteArray) {
+      if (note.title == event.target.innerText) {
+        document.querySelector("textarea").value = note.body;
       }
     }
   };
